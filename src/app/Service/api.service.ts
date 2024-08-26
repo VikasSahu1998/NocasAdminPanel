@@ -1,7 +1,4 @@
 import { Injectable } from '@angular/core';
-import { User } from '../Models/users';
-import { Subscription } from '../Models/subscription';
-import { Nocas } from '../Models/nocas';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -9,10 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'http://localhost:3003/api';
-  public userData!: User;
-  public subscriptionData!: Subscription
-  public nocasData!: Nocas
+  private baseUrl = 'http://ec2-3-142-142-5.us-east-2.compute.amazonaws.com:3001/api';
+
 
   constructor(private http: HttpClient) { }
 
