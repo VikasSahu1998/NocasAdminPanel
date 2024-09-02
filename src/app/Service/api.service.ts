@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseUrl = 'http://ec2-3-142-142-5.us-east-2.compute.amazonaws.com:3001/api';
+  private baseUrl = 'http://ec2-3-130-101-156.us-east-2.compute.amazonaws.com:3001/api';
   // public userData!: User;
  
   constructor(private http: HttpClient) { }
