@@ -1,5 +1,6 @@
 table {
     width: 100%;
+    
 }
 
 .mat-mdc-form-field {
@@ -7,13 +8,18 @@ table {
     width: 100%;
 }
 
+mat-header-cell,
+mat-cell {
+    width: auto;
+}
+
 td,
 th {
-    width: 25%;
+    width: auto;
 }
 
 tr.example-detail-row {
-    height: 0;
+    height: auto;
 }
 
 tr.example-element-row:not(.example-expanded-row):hover {
